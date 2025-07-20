@@ -36,7 +36,7 @@
       "dest": "/public/index.html"
     }
   ],
-  "env": {
-    "MONGO_URI": "@mongo_uri"
-  }
+"env": {
+  "MONGO_URI": "mongodb+srv://bhboomis:nPCJggIkHu1sYMF8@cluster0.9ezpy0a.mongodb.net/surveys?retryWrites=true&w=majority&appName=Cluster0"
+}
 }
