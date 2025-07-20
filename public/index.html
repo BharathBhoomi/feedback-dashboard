@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Feedback Dashboard</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .btn {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background-color: #1565c0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Survey Feedback Dashboard</h1>
+            <p>Real-time survey data visualization and management</p>
+        </div>
+        
+        <div id="status"></div>
+        
+        <div>
+            <button class="btn" onclick="checkHealth()">Check Server Status</button>
+            <button class="btn" onclick="loadSurveys()">Refresh Data</button>
+            <button class="btn" onclick="exportCSV()">Export to CSV</button>
+            <button class="btn" onclick="testAPI()">Test API</button>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Server Status</h3>
+                <div id="server-status">Click "Check Server Status" to verify connection</div>
+            </div>
+            
+            <div class="card">
+                <h3>Survey Statistics</h3>
+                <div id="survey-stats">
+                    <p>Total Surveys: <span id="total-surveys">0</span></p>
+                    <p>Total Responses: <span id="total-responses">0</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Survey Data</h3>
+            <div id="survey-data">
+                <div class="loading">Click "Refresh Data" to load surveys</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>API Test</h3>
+            <div id="api-test-result"></div>
+        </div>
+    </div>
+
+    <script>
+        let surveys = [];
+        
+        async function checkHealth() {
+            try {
+                const response = await axios.get('/api/health');
+                const status = document.getElementById('server-status');
+                status.innerHTML = `
+                    <p><strong>Status:</strong> ${response.data.status}</p>
+                    <p><strong>MongoDB:</strong> ${response.data.mongodb}</p>
+                    <p><strong>Timestamp:</strong> ${response.data.timestamp}</p>
+                `;
+                showStatus('Server is running successfully!', 'success');
+            } catch (error) {
+                document.getElementById('server-status').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+                showStatus('Failed to connect to server', 'error');
+            }
+        }
+        
+        async function loadSurveys() {
+            try {
+                const response = await axios.get('/api/surveys');
+                surveys = response.data;
+                displaySurveys(surveys);
+                updateStats(surveys);
+                showStatus('Survey data loaded successfully!', 'success');
+            } catch (error) {
+                document.getElementById('survey-data').innerHTML = `<p style="color: red;">Error loading surveys: ${error.message}</p>`;
+                showStatus('Failed to load survey data', 'error');
+            }
+        }
+        
+        function displaySurveys(surveys) {
+            const container = document.getElementById('survey-data');
+            
+            if (surveys.length === 0) {
+                container.innerHTML = '<p>No surveys found. The database might be empty or disconnected.</p>';
+                return;
+            }
+            
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Survey ID</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Created Date</th>
+                            <th>Response Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            surveys.forEach(survey => {
+                const responseCount = survey.responses ? survey.responses.length : 0;
+                html += `
+                    <tr>
+                        <td>${survey.surveyId || survey._id || 'N/A'}</td>
+                        <td>${survey.title || 'Untitled'}</td>
+                        <td>${survey.description || '-'}</td>
+                        <td>${survey.createdAt ? new Date(survey.createdAt).toLocaleDateString() : 'N/A'}</td>
+                        <td>${responseCount}</td>
+                    </tr>
+                `;
+            });
+            
+            html += '</tbody></table>';
+            container.innerHTML = html;
+        }
+        
+        function updateStats(surveys) {
+            const totalSurveys = surveys.length;
+            const totalResponses = surveys.reduce((sum, survey) => {
+                return sum + (survey.responses ? survey.responses.length : 0);
+            }, 0);
+            
+            document.getElementById('total-surveys').textContent = totalSurveys;
+            document.getElementById('total-responses').textContent = totalResponses;
+        }
+        
+        function exportCSV() {
+            if (surveys.length === 0) {
+                showStatus('No data to export. Please load surveys first.', 'error');
+                return;
+            }
+            
+            let csvContent = "data:text/csv;charset=utf-8,";
+            csvContent += "Survey ID,Title,Description,Created Date,Response Count\n";
+            
+            surveys.forEach(survey => {
+                const responseCount = survey.responses ? survey.responses.length : 0;
+                const row = [
+                    survey.surveyId || survey._id || 'N/A',
+                    `"${survey.title || 'Untitled'}"`,
+                    `"${survey.description || ''}"`,
+                    survey.createdAt ? new Date(survey.createdAt).toLocaleDateString() : 'N/A',
+                    responseCount
+                ].join(',');
+                csvContent += row + "\n";
+            });
+            
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "survey_data.csv");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            showStatus('CSV file downloaded successfully!', 'success');
+        }
+        
+        async function testAPI() {
+            const testData = {
+                surveyId: 'test_' + Date.now(),
+                title: 'Test Survey',
+                description: 'This is a test survey created from the dashboard',
+                questions: [
+                    {
+                        id: 1,
+                        question: 'How satisfied are you with our service?',
+                        type: 'rating'
+                    }
+                ],
+                responses: [
+                    {
+                        questionId: 1,
+                        answer: 5,
+                        respondentId: 'test_user_' + Date.now()
+                    }
+                ]
+            };
+            
+            try {
+                const response = await axios.post('/api/external/surveys', testData);
+                document.getElementById('api-test-result').innerHTML = `
+                    <p style="color: green;"><strong>Success!</strong></p>
+                    <p>Response: ${JSON.stringify(response.data, null, 2)}</p>
+                    <p>Test survey data sent successfully. You can refresh the data to see it in the table.</p>
+                `;
+                showStatus('API test completed successfully!', 'success');
+            } catch (error) {
+                document.getElementById('api-test-result').innerHTML = `
+                    <p style="color: red;"><strong>Error:</strong></p>
+                    <p>${error.response ? JSON.stringify(error.response.data, null, 2) : error.message}</p>
+                `;
+                showStatus('API test failed', 'error');
+            }
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.className = `status ${type}`;
+            statusDiv.textContent = message;
+            
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+            statusDiv.style.display = 'block';
+        }
+        
+        // Auto-load on page load
+        window.addEventListener('load', () => {
+            checkHealth();
+            loadSurveys();
+        });
+    </script>
+</body>
+</html>
