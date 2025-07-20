@@ -35,6 +35,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:5000',
     'https://survey-feedback-dashboard.vercel.app',
+    'https://feedback-dashboard-q2s8.vercel.app',
     process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null
   ].filter(Boolean),
   credentials: true
@@ -48,6 +49,13 @@ app.use(urlencodedParser);
 app.use('/api/', apiLimiter);
 app.use('/api/external/surveys', surveyLimiter);
 
+// Apply rate limiting
+app.use('/api/', apiLimiter);
+app.use('/api/external/surveys', surveyLimiter);
+
+// Serve static files from public directory for SDK and other public assets
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
 // Serve static files from client/build directory
 app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
 
@@ -56,16 +64,15 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
 });
 
-// Apply rate limiting
-app.use('/api/', apiLimiter);
-app.use('/api/external/surveys', surveyLimiter);
-
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, '..', 'public')));
-
-// Serve dashboard at root
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+// Catch-all route to serve React app for client-side routing
+app.get('*', (req, res) => {
+  // Skip API routes
+  if (req.path.startsWith('/api/')) {
+    return res.status(404).json({ message: 'API endpoint not found' });
+  }
+  
+  // Serve the React app for all other routes
+  res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
 });
 
 // Connect to MongoDB with optimized connection pooling for Vercel
@@ -1254,31 +1261,6 @@ app.post('/api/external/surveys', async (req, res) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-// Import optimized modules
-const connectWithOptimization = require('../database/optimizedConnection');
-const { apiLimiter, surveyLimiter } = require('../middleware/security');
-const { jsonParser, urlencodedParser, timeoutMiddleware } = require('../middleware/optimization');
-const compressionMiddleware = require('../middleware/compression');
-const performanceMonitor = require('../middleware/performance');
-const CacheService = require('../middleware/cache');
-app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'http://localhost:5000',
-    'https://survey-feedback-dashboard.vercel.app',
-    process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null
-  ].filter(Boolean),
-  credentials: true
-}));
-app.use(bodyParser.json({ limit: '10mb' }));
-
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, '..', 'public')));
-
-// Serve dashboard at root
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 // Connect to MongoDB with optimized connection pooling for Vercel
