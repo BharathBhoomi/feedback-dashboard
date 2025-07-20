@@ -22,29 +22,6 @@ import { Button } from '@mui/material';
 const SurveyRow = ({ survey, onSelectSurvey }) => {
   const [open, setOpen] = useState(false);
   
-  // Function to determine rating type and display appropriate chip
-  const getRatingChip = (survey) => {
-    if (survey.satisfactionRating) {
-      const rating = parseInt(survey.satisfactionRating);
-      let color = 'default';
-      if (rating >= 4) color = 'success';
-      else if (rating >= 3) color = 'warning';
-      else color = 'error';
-      return <Chip size="small" color={color} label={`Satisfaction: ${rating}/5`} />;
-    }
-    
-    if (survey.recommendationRating) {
-      const rating = parseInt(survey.recommendationRating);
-      let color = 'default';
-      if (rating >= 9) color = 'success';
-      else if (rating >= 7) color = 'warning';
-      else color = 'error';
-      return <Chip size="small" color={color} label={`NPS: ${rating}/10`} />;
-    }
-    
-    return null;
-  };
-
   return (
     <React.Fragment>
       <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
