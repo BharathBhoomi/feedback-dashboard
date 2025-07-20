@@ -48,6 +48,18 @@ app.use(urlencodedParser);
 app.use('/api/', apiLimiter);
 app.use('/api/external/surveys', surveyLimiter);
 
+// Serve static files from client/build directory
+app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+
+// Serve dashboard at root
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
+});
+
+// Apply rate limiting
+app.use('/api/', apiLimiter);
+app.use('/api/external/surveys', surveyLimiter);
+
 // Serve static files from public directory
 app.use(express.static(path.join(__dirname, '..', 'public')));
 

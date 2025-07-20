@@ -19,7 +19,7 @@
       "dest": "/server/server.js"
     },
     {
-      "src": "/(.*\\.(js|css|html|png|jpg|jpeg|gif|svg|ico))",
+      "src": "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg|ico)",
       "dest": "/client/build/$1"
     },
     {
@@ -43,3 +43,2745 @@
     "MONGO_URI": "mongodb+srv://bhboomis:nPCJggIkHu1sYMF8@cluster0.9ezpy0a.mongodb.net/surveys?retryWrites=true&w=majority&appName=Cluster0"
   }
 }
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir": "build"
+  }
+}
+{
+  "src": "client/package.json",
+  "use": "@vercel/static-build",
+  "config": {
+    "distDir":
