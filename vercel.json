@@ -6,8 +6,11 @@
       "use": "@vercel/node"
     },
     {
-      "src": "public/**",
-      "use": "@vercel/static"
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
     }
   ],
   "routes": [
@@ -17,26 +20,26 @@
     },
     {
       "src": "/(.*\\.(js|css|html|png|jpg|jpeg|gif|svg|ico))",
-      "dest": "/public/$1"
+      "dest": "/client/build/$1"
     },
     {
       "src": "/static/(.*)",
-      "dest": "/public/static/$1"
+      "dest": "/client/build/static/$1"
     },
     {
       "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
+      "dest": "/client/build/favicon.ico"
     },
     {
       "src": "/manifest.json",
-      "dest": "/public/manifest.json"
+      "dest": "/client/build/manifest.json"
     },
     {
       "src": "/(.*)",
-      "dest": "/public/index.html"
+      "dest": "/client/build/index.html"
     }
   ],
-"env": {
-  "MONGO_URI": "mongodb+srv://bhboomis:nPCJggIkHu1sYMF8@cluster0.9ezpy0a.mongodb.net/surveys?retryWrites=true&w=majority&appName=Cluster0"
-}
+  "env": {
+    "MONGO_URI": "mongodb+srv://bhboomis:nPCJggIkHu1sYMF8@cluster0.9ezpy0a.mongodb.net/surveys?retryWrites=true&w=majority&appName=Cluster0"
+  }
 }
