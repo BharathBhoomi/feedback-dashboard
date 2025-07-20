@@ -1,45 +1,45 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "server/server.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server/server.js"
-    },
-    {
-      "src": "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg|ico)",
-      "dest": "/client/build/$1"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/client/build/static/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/client/build/favicon.ico"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "/client/build/manifest.json"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/client/build/index.html"
-    }
-  ],
-  "env": {
-    "MONGO_URI": "mongodb+srv://bhboomis:nPCJggIkHu1sYMF8@cluster0.9ezpy0a.mongodb.net/surveys?retryWrites=true&w=majority&appName=Cluster0"
-  }
+    "version":  2,
+    "builds":  [
+                   {
+                       "src":  "server/server.js",
+                       "use":  "@vercel/node"
+                   },
+                   {
+                       "src":  "client/package.json",
+                       "use":  "@vercel/static-build",
+                       "config":  {
+                                      "distDir":  "build"
+                                  }
+                   }
+               ],
+    "routes":  [
+                   {
+                       "src":  "/api/(.*)",
+                       "dest":  "/server/server.js"
+                   },
+                   {
+                       "src":  "/(.*)\\.(js|css|html|png|jpg|jpeg|gif|svg|ico)",
+                       "dest":  "/client/build/$1"
+                   },
+                   {
+                       "src":  "/static/(.*)",
+                       "dest":  "/client/build/static/$1"
+                   },
+                   {
+                       "src":  "/favicon.ico",
+                       "dest":  "/client/build/favicon.ico"
+                   },
+                   {
+                       "src":  "/manifest.json",
+                       "dest":  "/client/build/manifest.json"
+                   },
+                   {
+                       "src":  "/(.*)",
+                       "dest":  "/client/build/index.html"
+                   }
+               ],
+    "env":  {
+                "MONGO_URI":  "mongodb+srv://bhboomis:nPCJggIkHu1sYMF8@cluster0.9ezpy0a.mongodb.net/surveys?retryWrites=true\u0026w=majority\u0026appName=Cluster0"
+            }
 }
