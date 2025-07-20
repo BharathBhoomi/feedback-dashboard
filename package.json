@@ -14,8 +14,8 @@
     "build": "cd client && npm install && npm run build",
     "deploy": "node deploy.js",
     "deploy-prod": "node deploy.js --prod",
-    "deploy-vercel": "vercel",
-    "deploy-vercel-prod": "vercel --prod",
+    "deploy-vercel": "node deploy-vercel.js",
+    "deploy-vercel-prod": "node deploy-vercel.js --prod",
     "test-deployment": "node test-deployment.js",
     "git-setup": "git add . && git commit -m 'Deploy: Survey feedback dashboard' && git push"
   },

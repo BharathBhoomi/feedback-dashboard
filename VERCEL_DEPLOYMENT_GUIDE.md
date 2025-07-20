@@ -32,12 +32,15 @@
    - Follow the interactive prompts
    - When asked about build settings, use the defaults as they're configured in vercel.json
 
-3. **Set environment variables**:
+3. **Set environment variables as secrets**:
    ```
+   vercel secrets add mongo_uri "your-mongodb-connection-string"
    vercel env add MONGO_URI
    ```
-   - Enter your MongoDB connection string when prompted
+   - First add your MongoDB connection string as a secret
+   - Then link the environment variable to the secret
    - Choose which environments to add it to (development, preview, production)
+   - This approach keeps your database credentials secure and not exposed in your vercel.json file
 
 4. **Deploy to production**:
    ```
@@ -55,7 +58,9 @@
    - Output Directory: `public`
    - Install Command: `npm run install-all`
 5. Add environment variables:
-   - MONGO_URI: Your MongoDB connection string
+   - MONGO_URI: Use the format `@mongo_uri` to reference a secret
+   - First create the secret in Project Settings > Environment Variables > Secrets
+   - This keeps your database credentials secure and not exposed in logs or configuration files
 6. Click "Deploy"
 
 ## Post-Deployment

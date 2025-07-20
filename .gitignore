@@ -18,6 +18,9 @@ yarn-error.log*
 /build
 /dist
 
+# Keep client build directory
+!/client/build
+
 # Vercel
 .vercel
 
